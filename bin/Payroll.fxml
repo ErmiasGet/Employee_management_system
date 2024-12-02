@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PayrollController">
+    <children>
+      <TableView fx:id="table" layoutY="190.0" onMouseClicked="#onTableClick" prefHeight="400.0" prefWidth="800.0">
+        <columns>
+            <TableColumn fx:id="tc_id" editable="false" prefWidth="70.0" text="ID" />
+            <TableColumn fx:id="tc_gross" editable="false" prefWidth="120.0" text="Gross" />
+            <TableColumn fx:id="tc_house_rent" editable="false" prefWidth="90.0" text="Pension Pay" />
+            <TableColumn fx:id="tc_medical" editable="false" prefWidth="90.0" text="Tax" />
+            <TableColumn fx:id="tc_per_day" editable="false" prefWidth="85.0" text="Per Day" />
+            <TableColumn fx:id="tc_per_hour" editable="false" prefWidth="85.0" text="Per Hour" />
+            <TableColumn fx:id="tc_over_time" editable="false" prefWidth="90.0" text="Over Time" />
+            <TableColumn fx:id="tc_over_time_pay" editable="false" prefWidth="85.0" text="O.T.P" />
+            <TableColumn fx:id="tc_payable" editable="false" prefWidth="85.0" text="Payable" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="14.0" prefHeight="27.0" prefWidth="88.0" text="ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tx_id" layoutX="124.0" layoutY="15.0" promptText="Enter ID" />
+      <TextField fx:id="tx_gross" layoutX="124.0" layoutY="42.0" onInputMethodTextChanged="#calculateValues" onKeyPressed="#calculateValues" onKeyReleased="#calculateValues" onKeyTyped="#calculateValues" promptText="Enter Gross Salary" />
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="41.0" prefHeight="27.0" prefWidth="88.0" text="Gross:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="95.0" prefHeight="27.0" prefWidth="88.0" text="Per Day:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tx_per_day" editable="false" layoutX="124.0" layoutY="96.0" text="0" />
+      <TextField fx:id="tx_per_hour" editable="false" layoutX="398.0" layoutY="96.0" text="0" />
+      <Label alignment="CENTER_RIGHT" layoutX="310.0" layoutY="95.0" prefHeight="27.0" prefWidth="88.0" text="Per Hour:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="68.0" prefHeight="27.0" prefWidth="88.0" text="Tax:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tx_medical" editable="false" layoutX="124.0" layoutY="69.0" text="0" />
+      <TextField fx:id="tx_house_rent" editable="false" layoutX="398.0" layoutY="42.0" text="0" />
+      <Label alignment="CENTER_RIGHT" layoutX="277.0" layoutY="41.0" prefHeight="27.0" prefWidth="114.0" text="Pension Pay:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="121.0" prefHeight="27.0" prefWidth="88.0" text="Payable:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tx_payable" editable="false" layoutX="124.0" layoutY="122.0" text="0" />
+      <Label alignment="CENTER_RIGHT" layoutX="289.0" layoutY="68.0" prefHeight="27.0" prefWidth="102.0" text="O.T.P:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tx_over_time_pay" editable="false" layoutX="398.0" layoutY="69.0" text="0" />
+      <TextField fx:id="tx_over_time" layoutX="398.0" layoutY="15.0" onInputMethodTextChanged="#calculateValues" onKeyPressed="#calculateValues" onKeyReleased="#calculateValues" onKeyTyped="#calculateValues" promptText="Over Time Hour" />
+      <Label alignment="CENTER_RIGHT" layoutX="303.0" layoutY="14.0" prefHeight="27.0" prefWidth="88.0" text="Over Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="504.0" layoutY="135.0" mnemonicParsing="false" onAction="#onButtonClear" text="Clear" />
+      <Button fx:id="btnDelete" disable="true" layoutX="400.0" layoutY="135.0" mnemonicParsing="false" onAction="#onButtonDelete" text="Delete" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #c49797;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RecoveryController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="101.0" layoutY="246.0" prefHeight="74.0" prefWidth="462.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="55.0" prefWidth="103.0" text="Recovery-key" textFill="#fffd00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="recoveryTf" prefHeight="33.0" prefWidth="285.0" promptText="Enter your recovery key" style="-fx-background-color: white;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <JFXButton layoutX="343.0" layoutY="349.0" onAction="#onSubmitHandler" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: wheat;" text="Submit" textFill="#0465dc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutY="131.0" prefHeight="17.0" prefWidth="644.0" text="Password Recovery">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

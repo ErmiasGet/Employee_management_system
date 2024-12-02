@@ -1,0 +1,8 @@
+#vbox {
+    -fx-background-image:url(employee.jpg);
+    -fx-background-size:auto;
+}
+#borderPane {
+    -fx-background-image:url(employee.jpg);
+    -fx-background-size:auto;
+}

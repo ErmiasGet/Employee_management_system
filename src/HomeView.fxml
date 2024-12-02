@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../Desktop%20Application/src/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: fff;">
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #1C4E80;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="2.0" layoutY="359.0" maxWidth="1.7976931348623157E308" onAction="#onEmployeeSalaryHandler" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #fff; -fx-background-color: transparent; -fx-background-radius: 0;" text="Employee Salary">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#c49797" glyphName="MONEY" size="25" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="300.0" maxWidth="1.7976931348623157E308" onAction="#addEmployeeHandler" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #fff; -fx-background-color: transparent; -fx-background-radius: 0;" text=" Add Employee">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#c49797" glyphName="PLUS" size="25" wrappingWidth="13.64285659790039" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="246.0" onAction="#onHomeHandler" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-text-fill: #fff; -fx-background-radius: 0;" text="Home">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#c49797" glyphName="HOME" size="25" text="" textAlignment="CENTER" wrappingWidth="32.214284896850586" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </JFXButton>
+                              <FontAwesomeIconView />
+                              <FontAwesomeIconView fill="#c49797" glyphName="USER" layoutX="68.0" layoutY="138.0" size="90" text="" />
+                              <Text fill="#a18339" layoutX="60.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome ">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="72.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="98.0" layoutX="102.0" layoutY="229.0" startX="-100.0" stroke="#c49797" strokeWidth="3.0" />
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="-1.0" layoutY="418.0" maxWidth="1.7976931348623157E308" onAction="#onPayrollHandler" prefHeight="50.0" prefWidth="207.0" style="-fx-text-fill: #fff; -fx-background-color: transparent; -fx-background-radius: 0;" text="Payroll System">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#c49797" glyphName="MONEY" size="25" wrappingWidth="28.785715103149414" />
+                                 </graphic>
+                              </JFXButton>
+                              <FontAwesomeIconView />
+                           </children>
+                        </Pane>
+                        <JFXButton fx:id="logoutBtn" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#onLogoutHandler" prefHeight="50.0" style="-fx-text-fill: #fff; -fx-background-color: #1C4E80;" text="Logout" textFill="#c30b0b">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="#c49797" glyphName="SIGN_OUT" size="25" />
+                           </graphic>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane id="vbox" prefHeight="604.0" prefWidth="800.0" stylesheets="@../../Desktop%20Application/src/style.css">
+                           <children>
+                              <HBox layoutY="210.0" prefHeight="213.0" prefWidth="800.0" spacing="15.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #030637; -fx-border-radius: 20;">
+                                       <children>
+                                          <FontAwesomeIconView fill="#fffbfb" glyphName="USERS" layoutX="18.0" layoutY="87.0" size="50" wrappingWidth="67.79998779296875" />
+                                          <Label alignment="CENTER" layoutX="-1.0" layoutY="103.0" prefHeight="20.0" prefWidth="201.0" text="TOTAL EMPLOYEEES" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="totalEmployee" layoutX="159.0" layoutY="9.0" text="3" textFill="WHITE">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Pane>
+                                    <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1C4E80;">
+                                       <children>
+                                          <Label alignment="CENTER" layoutY="99.0" prefHeight="20.0" prefWidth="200.0" text="TOTAL PRESENTS" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="activeLabel" layoutX="158.0" layoutY="8.0" prefHeight="35.0" prefWidth="16.0" text="3" textFill="WHITE">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="23.0" layoutY="86.0" size="50" wrappingWidth="52.0" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Pane>
+                                    <Pane layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c49797;">
+                                       <children>
+                                          <Label fx:id="inactiveLabel" layoutX="156.0" layoutY="7.0" prefHeight="24.0" prefWidth="13.0" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="-3.0" layoutY="102.0" prefHeight="20.0" prefWidth="210.0" text="TOTAL INACTIVE EMPLOYEES" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="MINUS" layoutX="28.0" layoutY="85.0" size="50" wrappingWidth="52.0" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="12.0" right="12.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                              <Label alignment="CENTER" layoutY="63.0" prefHeight="52.0" prefWidth="800.0" text="Employee Management System">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.7209944751381215" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.6313725709915161" green="0.5137255191802979" blue="0.2235294133424759" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
